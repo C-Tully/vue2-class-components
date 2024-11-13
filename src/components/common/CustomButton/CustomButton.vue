@@ -2,30 +2,33 @@
   <b-button
     :id="buttonId"
     :variant="buttonVariant"
+    :ariaLabel="passedAriaLabel"
+    @click="emit('clickEvent')"
   >
-    {{buttonCopy}}
+    {{ buttonCopy }}
   </b-button>
 </template>
 
-<script >
-import Vue from 'vue';
-import { Component, Prop, Watch } from 'vue-property-decorator';
+<script>
+import Vue from "vue";
+import { Component, Prop } from "vue-property-decorator";
 
 @Component
 export default class CustomButton extends Vue {
-  @Prop({ type: String, default: '' }) passedButtonId;
-  @Prop({ type: String, default: '' }) buttonVariant;
-  @Prop({ type: String, default: 'I am a button' }) buttonCopy;
+  @Prop({ type: String, default: "" }) passedButtonId;
+  @Prop({ type: String, default: "" }) buttonVariant;
+  @Prop({ type: String, default: "I am a button" }) buttonCopy;
+  @Prop({ type: String, default: null }) passedAriaLabel;
 
   //Temp
   mounted() {
-    console.log('Mounted');
+    console.log("Mounted");
   }
 
   get buttonId() {
-    return this.passedButtonId ? 
-      `button-${this._ud}-${this.passedButtonId}` 
-      : `button-${this._ud}`; 
+    return this.passedButtonId
+      ? `button-${this._ud}-${this.passedButtonId}`
+      : `button-${this._ud}`;
   }
 }
 </script>
