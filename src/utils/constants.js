@@ -6,6 +6,5 @@ const constants = {
   },
 };
 
-//Set constants to a global value
 Vue.prototype.$constants = constants;
 export default constants;

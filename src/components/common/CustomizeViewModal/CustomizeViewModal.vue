@@ -338,7 +338,7 @@ import {
   DEFAULT_MARKETS_STRATEGIES,
   DEFAULT_GREEKS_STRATEGIES,
   DEFAULT_TABLE_VIEW_STRATEGIES,
-} from "@/store/common/loremIpsumDollarPreferences";
+} from "@/store/common/LoremIpsum";
 import { isEnabled } from "vue-feature-flipping";
 @Component({
   name: "CustomizeViewModal",

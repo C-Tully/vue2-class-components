@@ -3,7 +3,7 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
-//TODO:: temp store layout.
+//Intentionally left as a basic setup.
 //Here we would add given store modules for now, its just a default value
 export default new Vuex.Store({
   state: {
