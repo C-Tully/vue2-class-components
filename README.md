@@ -1,2 +1,6 @@
-# The following Repo holds some components that I've worked on in the past 
-## Please reach out if you have any questions of concerns.
+# Read.me
+## The following Repo holds some components and Vuex pieces
+## These can be found...
+### develop branch
+### src/components  directory.
+## Please reach out if you have any questions.
